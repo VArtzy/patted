@@ -16,7 +16,7 @@ This project using two types of inference on-chain in blockchain
 - GPT-3.5-turbo (llm)
 - ICP blockchain host / WebAssembly
 - Candid (Rust) BE
-- Vanilla JS / HTML / CSS
+- Vanilla JS / HTML / CSS FE
 
 #### Experience or lesson learned:
 - I don't like it really much (web3 ecosystem), the documentation little bit unclear and outdated example. Finding almost 10 unique error from code, framework and package versioning, so many limitation coming from WebAssembly/web3.
