@@ -14,8 +14,8 @@ This project using two types of inference on-chain in blockchain
 #### Stack
 - mobilenetv2-7 (vision -- classifier)
 - GPT-3.5-turbo (llm)
-- ICP host
-- Candid (Rust)
+- ICP blockchain host
+- Candid (Rust) BE
 - Vanilla JS / HTML / CSS
 
 #### Experience or lesson learned:
