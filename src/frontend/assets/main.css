@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.upload-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.upload-container input {
+    display: none;
+}
+
+.upload-container button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+img {
+    max-width: 100%;
+    border: 1px solid #555;
+}
+
+.image {
+    margin-top: 10px;
+    border: 1px solid #555;
+    object-fit: cover
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+textarea {
+    margin-top: -20px;
+    max-width: 80vw;
+}
+
+.option {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 18px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 18px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #4CAF50;
+}
+
+input:checked+.slider:before {
+    transform: translateX(24px);
+}
+
+input.file {
+    display: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clean-button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #a10dab;
+    border-radius: 4px;
+    background-color: #b11dbb;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.clean-button:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+}
+
+img.loader {
+    width: 32px;
+    display: block;
+    left: 50%;
+    position: absolute;
+    -webkit-user-select: none;
+    user-select: none;
+    animation-name: astrodance;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    border: none;
+    background-color: transparent;
+    padding-top: 30px;
+}

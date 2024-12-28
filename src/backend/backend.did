@@ -1,0 +1,37 @@
+type HeaderField = record { text; text; };
+
+type HttpRequest = record {
+    method: text;
+    url: text;
+    headers: vec HeaderField;
+    body: blob;
+};
+
+type HttpResponse = record {
+    status_code: nat16;
+    headers: vec HeaderField;
+    body: blob;
+};
+
+type Classification = record {
+  label: text;
+  score: float32;
+};
+
+type ClassificationError = record {
+  message: text;
+};
+
+type ClassificationResult = variant {
+  Ok: vec Classification;
+  Err: ClassificationError;
+}
+
+service : {
+    "send_http_post_request": (text) -> (text) query;
+    "http_request": (request: HttpRequest) -> (HttpResponse) query;
+    "llm": (prompt: text) -> (text);
+    "classify": (image: blob) -> (ClassificationResult);
+    "classify_query": (image: blob) -> (ClassificationResult) query;
+    "run": () -> (ClassificationResult) query;
+}
