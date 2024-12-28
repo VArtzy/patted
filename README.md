@@ -1,5 +1,7 @@
 ### **Web3 DeAI Pet and Wildlife Identifier**
 
+![image](https://github.com/user-attachments/assets/776dbebb-4ee0-4761-91cb-c83627bca778)
+
 #### **Description**:  
 A web3 application that allows users to upload images of animals, such as pets or wildlife, to identify their species or breeds. This is my study project for learning Web3, ICP and DeAI (Decentralized AI)
 
